@@ -1,1 +1,9 @@
 <h1>Welcome to the Blog of Niagara Nick</h1>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :body %>
+  <br />
+  <%= f.button :submit %>
+
+<% end %>
