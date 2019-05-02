@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :user
+validates :body, presence: true, length: { maximum: 5000, minimum: 3 }
+validates :author, presence: true, length: { maximum: 50, minimum: 3 }
 end
